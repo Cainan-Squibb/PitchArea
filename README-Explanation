@@ -26,6 +26,29 @@ space between fastballs as well as significant velocity drop off.  This almost a
 also neglects guys who rely on more east to west movement as the shape of their pitches is relatively flat making the area small.  This concept doesn't apply as much
 for north and south pitchers as much because most pitchers get some natural horizontal movement to begin with.
 
-  2.  Scaled area does not care about strikes.  
+  2.  Scaled area does not care about strikes.  It might be kind of obvious why this is the case, the calculation for scaled area has nothing to do with the result
+of the pitch.  If I were to improve upon this project this is where I would start.  Although pitch shape and velocity matter, they only matter in the context of 
+consistent strike throwing.  
+
+
+Results:
+
+Scaled Area did a pretty decent job at evaluating UWM's pitchers in retrospect.  At the top of the list you see some the team's best pitchers including conference 
+pitcher of the year Gavin Theis.  Also among the top 7 in Scaled Area were pitchers Mike Sullivan, Aric Ehmke, and Logan Schulfer.  All three of these pitchers were 
+weekend starters at some point in the year with Ehmke ending in the Saturday role, and Schulfer becoming an integral part of UWM's bullpen after a shaky start to 
+the year.  Both Sullivan and Fishnick are sort of outliers in this sense because they are amongst the top 7 but yet neither of them performed well or showed any signs
+of being capable of it.  There is no doubt Sullivan is the better pitcher, he throws a bit harder and his stuff is a bit better, but for general cases him and Fishnick
+can be comparable.  Although their performance was mediocre, I can understand why Scaled Area rated them highly.  Like mentioned above they both threw slow curveballs
+that certainly helps their Scaled Area.  Also in the top 7 are Riley Peterson and Tyler Andrews.  Peterson was our premier set up man who had an incredible season (in 
+my personal opinion our set up man and closer is what made us a good team), and Andrews was a freshman who began to see appearances in leverage situations as the year
+went on.  Below the top 7 you get into guys who did not make as big of a contribution.  A few key names that I think Scaled Area undervalued were Matthew Mueller and 
+Tyler Deleskiewicz.  Its funny because out of everyone on the team they are probably the two most likely to get drafted.  They are 
+both big and tall with room to put on a lot of muscle.  Why they get undervalued by Scaled Area is because they don't throw many pitches.
+As stated above, pitchers who throw more pitches will have an advantage over pitchers who throw less, Mueller and Deleskiewicz
+only throw three pitches thus they are devalued.  There is one last pitcher of note below the top 7.  Its the "Mr. Irrelevant" of my
+rankings, the Horizon League conference reliever of the year, Logan Snow.  Logan is the biggest outlier on this list because other than
+Theis, he was the best pitcher on UWM.  If you look a bit closer at Snow it makes sense his low Scaled Area.  He falls victim to all three
+of Scaled Areas problems.  For starters, Snow's graph 
+
 
 
