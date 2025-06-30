@@ -1,0 +1,21 @@
+Hello to whoever is reading this!  This document is meant to explain the purpose of my code as well as the inspiration.
+
+Inspiration:
+During the 2024-2025 academic year, I was the team manager for the University of Wisconsin-Milwaukee baseball program.  While there I managed and operated their Rapsodo.  
+At the end of the winter practices and the start of the season I had all of this pitcher data that I had no clue what to do with.  At this point in time we were going through a tough portion of our schedule playing
+a variety of talented baseball programs including some SEC schools.  Although we scuffled in the early parts of the season, some of our pitchers were proving effective even against top level competition.  This got me
+thinking about why these particular pitchers were effective while others weren't.  There were other pitchers on our team who threw just as hard or had better movement on their pitches, so why these pitchers?  
+This was the inspiration for this project.
+
+Explantion:
+The data that is used from this project was collected entirely from my time at UWM using their Rapsodo data, I worked tirelessly to try to make this data as accuarate as possible as Rapsodo's pitch inference system
+is nowhere near perfect. Please keep in mind as you are running the program that there are data points that are incorrect, however I have taken steps to try to limit this.  Most of the code for this project has more
+to do with the display of the data and having it appear nicely in the frames than the actual calculation of data.  To keep this explanation brief, I am not going to explain how all of the windows and buttons work, 
+it essentially boils down to trial and error until you get the look you want.  Now onto how the pitcher data is processed.  The program first reads all of the CSVs for all of the pitchers on the team, I cleaned this 
+data up a bit before downloading it to help with inaccuracy.  From there it groups the pitches into different buckets based on what the pitcher throws while also tracking the average velocity, average movement profile,
+and pitch count of each individual pitch.  After this is done, any pitch that was not thrown more than 30 times will be thrown out, this is to remove any misreads that may have happened throughout the season.  
+Then the horizontal and vertical break create the x and y cordinates on the graph displayed in the program.  These cordinates are then fed into a shoelace alogrithm that calculates the area of the shape formed by
+each of the pitcher's pitches (NOTE: This assumes the pitcher has more than 2 pitches).  The area of the shape is then multiplied with the difference in velocity of their fastest average pitch and their slowest average
+pitch to create what is called in the program "Scaled Area".  
+
+
