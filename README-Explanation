@@ -18,4 +18,14 @@ Then the horizontal and vertical break create the x and y cordinates on the grap
 each of the pitcher's pitches (NOTE: This assumes the pitcher has more than 2 pitches).  The area of the shape is then multiplied with the difference in velocity of their fastest average pitch and their slowest average
 pitch to create what is called in the program "Scaled Area".  
 
+Scaled Area is just one of many ideas I had to evaluate pitchers, and by no means is it perfect.  I will go into specific examples on the team later in this document,
+but for now my initial comments on where this metric could be lacking is:
+
+  1. Scaled area favors curveballs.  I noticed in general, the guys who threw curveballs tended to do better on this scale because curveballs get a lot of vertical 
+space between fastballs as well as significant velocity drop off.  This almost automatically made pitcher's with decent curveballs place highly on scaled area. This
+also neglects guys who rely on more east to west movement as the shape of their pitches is relatively flat making the area small.  This concept doesn't apply as much
+for north and south pitchers as much because most pitchers get some natural horizontal movement to begin with.
+
+  2.  Scaled area does not care about strikes.  
+
 
