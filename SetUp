@@ -1,0 +1,26 @@
+To run this project on your own computer follow these steps:
+
+1. Clone the repository in your own IDE
+2. Open a new terminal in your IDE
+3. If you are not already in the PitchArea directory navigate to the directory using the cd command
+4. Now you must create a virtual environment to do that copy and paste the following code in the terminal:
+
+  Windows:
+    1. python -m venv venv
+    2. .\venv\Scripts\activate
+
+  MAC/Linux:
+    1. python3 -m venv venv
+    2. source venv/bin/activate
+
+5. Install the required packages using the command: pip install -r requirements.txt
+6.  You should now be able to run the project with the line:
+
+    Windows:
+      python pitcharea.py
+
+    MAC/Linux:
+      python3 pitcharea.py
+
+
+    
