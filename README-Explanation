@@ -34,6 +34,11 @@ a pitcher with 3 great pitches with all other things being equal.
 of the pitch.  If I were to improve upon this project this is where I would start.  Although pitch shape and velocity matter, they only matter in the context of 
 consistent strike throwing.  
 
+  4. Scaled area does not care about velocity, but rather velocity separation.  Like mentioned above, one component of scaled area is the velocity separation, what 
+this fails to account for is pure velocity.  For instance if two pitchers had the exact same pitches, and movement profiles but one pitcher had a 95 mph fastball and
+80 mph curveball and the other had a 85 mph fastball and a 70 mph curveball.  Although these two players are unique because of their velocity difference, their scaled 
+area is the exact same because their velocity separation is the same.
+
 
 Results:
 
@@ -74,6 +79,8 @@ or just as a whole, but I think throwing strikes does have to do with pitcher's 
 the zone, so he saw limited opportunities.  Overall, I think that this would help weed out some more of the guys who just throw good stuff and don't have actually pitch well.
 I think this may also encourage the ranking to shape like the pitching staff structure as well just because guys who throw harder and throw less pitches and strike tend
 to throw in the later innings.
+
+
 
 
 
