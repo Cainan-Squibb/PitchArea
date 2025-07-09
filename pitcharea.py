@@ -8,17 +8,9 @@ import csv
 from matplotlib.widgets import Button
 import tkinter as tk
 from tkinter import ttk
-# Some future thoughts on this.  This model does not value throwing harder but rather having separation this is not necessarily good
-# pitchers with the Fastball/Off Speed velocities of 95/85 and 85/75 are viewed the same which they are not
-# This model favors pitchers who get vertical break more than horizontal.  In my experience, most pitchers will get natural
-# horizontal movement on their pitches, this is not the same for vertical movement.  So, if a pitcher mostly throws across the zone 
-# pitches, this model will undervalue them because they don't have the natural vertical presense to increase the area.
-# This model may also undervalue pitchers with fewer pitches because there isn't as many points to expand the area with
-# Depending on how this is modified in the future, this may be a model to predict how effective a starting pitcher will be, since
-# starting pitchers tend to need more pitches because they throw longer than relievers
 
 # Directory containing CSV files
-base_folder = r"C:\Users\Cainan Squibb\OneDrive - UWM\Desktop\Baseball Analytics\UWM Pitchers CSVs"
+base_folder = r"UWM Pitchers CSVs"
 
 def load_pitch_data(csv_path):
     """Load pitch data from a given CSV file, dynamically handling metadata."""
