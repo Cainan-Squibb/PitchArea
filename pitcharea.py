@@ -121,13 +121,13 @@ def process_pitchers(base_folder):
 
 def plot_pitch_shapes_with_arrows(pitcher_data):
     pitcher_names = list(pitcher_data.keys())  # Get pitcher names to navigate through
-    current_index = [0]  # Using list to allow mutability (to modify within the lambda)
+    current_index = [0]  
 
     fig, ax = plt.subplots(figsize=(10, 6))
 
     # Function to update the plot
     def update_plot(index):
-        ax.clear()  # Clear previous plot
+        ax.clear()  
         pitcher = pitcher_names[index]
         data = pitcher_data[pitcher]
         df = data["df"]
@@ -169,9 +169,7 @@ def plot_pitch_shapes_with_arrows(pitcher_data):
         x_min, x_max = np.min(hull_points[:, 0]), np.max(hull_points[:, 0])
         y_min, y_max = np.min(hull_points[:, 1]), np.max(hull_points[:, 1])
 
-        # Set axis limits to zoom out a bit more
-                # Set axis limits to zoom out a bit more
-        margin = 15  # Increased margin by 5 more units
+        margin = 15 
         ax.set_xlim(x_min - margin, x_max + margin)
         ax.set_ylim(y_min - margin, y_max + margin)
 
