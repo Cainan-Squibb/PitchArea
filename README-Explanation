@@ -7,14 +7,14 @@ a variety of talented baseball programs including some SEC schools.  Although we
 thinking about why these particular pitchers were effective while others weren't.  There were other pitchers on our team who threw just as hard or had better movement on their pitches, so why these pitchers?  
 This was the inspiration for this project.
 
-Explantion:
-The data that is used from this project was collected entirely from my time at UWM using their Rapsodo data, I worked tirelessly to try to make this data as accuarate as possible as Rapsodo's pitch inference system
+Explanation:
+The data that is used from this project was collected entirely from my time at UWM using their Rapsodo data, I worked tirelessly to try to make this data as accurate as possible as Rapsodo's pitch inference system
 is nowhere near perfect. Please keep in mind as you are running the program that there are data points that are incorrect, however I have taken steps to try to limit this.  Most of the code for this project has more
 to do with the display of the data and having it appear nicely in the frames than the actual calculation of data.  To keep this explanation brief, I am not going to explain how all of the windows and buttons work, 
 it essentially boils down to trial and error until you get the look you want.  Now onto how the pitcher data is processed.  The program first reads all of the CSVs for all of the pitchers on the team, I cleaned this 
 data up a bit before downloading it to help with inaccuracy.  From there it groups the pitches into different buckets based on what the pitcher throws while also tracking the average velocity, average movement profile,
 and pitch count of each individual pitch.  After this is done, any pitch that was not thrown more than 30 times will be thrown out, this is to remove any misreads that may have happened throughout the season.  
-Then the horizontal and vertical break create the x and y cordinates on the graph displayed in the program.  These cordinates are then fed into a shoelace alogrithm that calculates the area of the shape formed by
+Then the horizontal and vertical break create the x and y coordinates on the graph displayed in the program.  These coordinates are then fed into a shoelace algorithm that calculates the area of the shape formed by
 each of the pitcher's pitches (NOTE: This assumes the pitcher has more than 2 pitches).  The area of the shape is then multiplied with the difference in velocity of their fastest average pitch and their slowest average
 pitch to create what is called in the program "Scaled Area".  
 
@@ -58,29 +58,24 @@ only throw three pitches thus they are devalued.  There is one last pitcher of n
 rankings, the Horizon League conference reliever of the year, Logan Snow.  Logan is the biggest outlier on this list because other than
 Theis, he was the best pitcher on UWM.  If you look a bit closer at Snow it makes sense his low Scaled Area.  He falls victim to all three
 of Scaled Areas problems.  For starters, Snow is a east to west pitcher who does not throw a curveball.  His greatest strength is his ability to command the zone 
-which also does not appear in Scaled Area.  Overall, Snow is the anti Scaled Area pitcher he goes against everything the calculation trys to show.  
+which also does not appear in Scaled Area.  Overall, Snow is the anti Scaled Area pitcher he goes against everything the calculation tries to show.  
 
 Discussion:
 
-Although Snow being a massive outlier was somewhat of a dissapointment, I decided to look at it a different way.  I think Scaled Area did a good job of generally predicting
+Although Snow being a massive outlier was somewhat of a disappointment, I decided to look at it a different way.  I think Scaled Area did a good job of generally predicting
 pitchers' success and I think Snow's result made me realize that its not just about the top of the scale.  If you look at the leaderboard again, notice Snow's Scaled Area
-is at least 100 points below the next closest.  This made me realize Snow falls in a unique subset of pitchers.  Pitcher's could fall in Snow's range and genuinly be bad,
+is at least 100 points below the next closest.  This made me realize Snow falls in a unique subset of pitchers.  Pitcher's could fall in Snow's range and genuinely be bad,
 they could have poor velocity separation, or poor movement profiles.  This leaves this really low Scaled Area score to be an interesting spot that still demands attention. 
-At ameteur levels most of the players in this category may just not be very good, but among the misfits you'll find someone like Snow who throws so strange that it works.
+At amateur levels most of the players in this category may just not be very good, but among the misfits you'll find someone like Snow who throws so strange that it works.
 And at higher levels the lower Scaled Area may be more indicative for interesting arms since there won't be as much weeding out.  
 
-This may just be a coincidence, but I also noticed that the ranking of Scaled Area, although not perfect, had a similar organiztion as our actual pitching staff.  
+This may just be a coincidence, but I also noticed that the ranking of Scaled Area, although not perfect, had a similar organization as our actual pitching staff.  
 The guys at the top were generally starters, and as you went down the list you slowly got into the leverage relievers and then into the innings eaters at the bottom (with the 
 exception of Snow).  I have no clue if this could be a way to get a general outline of what guys should be what on your team, but as I refine it in the future I
 may look into that.
 
 Finally some improvements that I will do to Scaled Area when I come back to it is factor in strike percentage.  I don't know whether I would do it for individual pitches
-or just as a whole, but I think throwing strikes does have to do with pitcher's success.  A great example is Logan Dobberstein, he has great raw pitchs but he struggles to command
+or just as a whole, but I think throwing strikes does have to do with pitcher's success.  A great example is Logan Dobberstein, he has great raw pitches but he struggles to command
 the zone, so he saw limited opportunities.  Overall, I think that this would help weed out some more of the guys who just throw good stuff and don't have actually pitch well.
 I think this may also encourage the ranking to shape like the pitching staff structure as well just because guys who throw harder and throw less pitches and strike tend
 to throw in the later innings.
-
-
-
-
-
